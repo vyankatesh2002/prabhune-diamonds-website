@@ -1,8 +1,10 @@
-# TODO: Update Consultation Forms
+# GitHub Push Task
 
-## Tasks
-- [x] Update index.html "Send Us a Message" form to use formsubmit.co with consultation fields
-- [x] Update consultation.html "Schedule a Consultation" form to use formsubmit.co
-- [x] Add WhatsApp script to both forms
-- [x] Update contact details (email: prabhunediamonds@gmail.com, phone: 9960340222)
-- [ ] Test forms functionality
+## Completed:
+- [x] 1. Created .gitignore
+
+## Pending:
+- [ ] 2. git add -A
+- [ ] 3. git commit -m "Restructure project to root directory, remove old subdirectories, add sitemap.xml and .gitignore, cleanup"
+- [ ] 4. git push origin main
+- [ ] 5. Generate and list GitHub file links

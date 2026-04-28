@@ -1,528 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta name="description"
-    content="Prabhune Diamonds & Stones offers authentic gemstones, rudraksha, and expert astrological consultations since 1998. Personalized guidance for prosperity, health, and spiritual balance.">
-  <meta name="keywords"
-    content="Prabhune Diamonds, gemstones, rudraksha, astrology consultation, Pune, diamond jeweler, gemstone therapy, spiritual guidance">
-  <link rel="canonical" href="https://prabhunediamond.com/" />
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prabhune Diamonds & Stones | Authentic Gemstones & Astrological Consultations</title>
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://prabhunediamond.com/">
-  <meta property="og:title" content="Prabhune Diamonds & Stones | Authentic Gemstones & Astrological Consultations">
-  <meta property="og:description"
-    content="Trusted gemstone and astrological consultation services with 28+ years of expertise. Personalized guidance for career, marriage, Vastu, and more.">
-  <meta property="og:image" content="https://prabhunediamond.com/images/logos/PDS.jpg.jpeg">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://prabhunediamond.com/">
-  <meta property="twitter:title"
-    content="Prabhune Diamonds & Stones | Authentic Gemstones & Astrological Consultations">
-  <meta property="twitter:description"
-    content="Trusted gemstone and astrological consultation services with 28+ years of expertise. Personalized guidance for career, marriage, Vastu, and more.">
-  <meta property="twitter:image" content="https://prabhunediamond.com/images/logos/PDS.jpg.jpeg">
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Prabhune Diamonds & Stones",
-    "url": "https://prabhunediamond.com",
-    "logo": "https://prabhunediamond.com/images/logos/PDS.jpg.jpeg",
-    "description": "Authentic gemstones, rudraksha, and expert astrological consultations since 1998.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Morya Mandir Marg, Gandhi Peth Chowk, Chinchwadgaon",
-      "addressLocality": "Pune",
-      "addressRegion": "Maharashtra",
-      "postalCode": "411033",
-      "addressCountry": "IN"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-9822850279",
-      "contactType": "customer service"
-    },
-    "sameAs": [
-      "https://www.facebook.com/prabhunediamonds",
-      "https://www.instagram.com/prabhunediamonds"
-    ]
-  }
-  </script>
-  <link rel="stylesheet" href="css/style.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Vyankatesh Jaware – Web developer blending pharmacy background & AI to craft high-conversion business websites. Modern, fast, and results-driven.">
+  <title>Vyankatesh Jaware | Professional Web Developer – Portfolio & Case Studies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0a0c;
+      color: #f0f0f0;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff, #a0a0ff, #6c63ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.8rem;
+    }
+
+    /* header transparent + glass */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: transparent;
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      transition: background 0.2s;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+    }
+    .logo {
+      font-size: 1.7rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #ffffff, #b0b0ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #f0f0f0;
+      transition: 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: #a78bfa;
+      text-shadow: 0 0 6px rgba(167,139,250,0.6);
+    }
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #2c2c3a;
+      color: white;
+      padding: 0.7rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-primary {
+      background: #6c63ff;
+      border: none;
+      box-shadow: 0 8px 20px -8px rgba(108,99,255,0.4);
+    }
+    .btn-primary:hover {
+      background: #5a52e0;
+      transform: translateY(-3px);
+      box-shadow: 0 15px 25px -10px #6c63ff;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #6c63ff;
+      color: #d0d0ff;
+    }
+    .btn-outline:hover {
+      background: rgba(108,99,255,0.1);
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      font-size: 2.3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+    h2:after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: #6c63ff;
+      margin: 0.7rem auto 0;
+      border-radius: 4px;
+    }
+
+    /* Hero Section with Full Background Image */
+    .hero {
+      position: relative;
+      padding: 8rem 0 6rem;
+      background: linear-gradient(135deg, rgba(10,10,12,0.7), rgba(20,20,28,0.85)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=800&fit=crop') center/cover no-repeat;
+      background-attachment: fixed;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+    }
+    .hero-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .hero-content {
+      flex: 1;
+      backdrop-filter: blur(2px);
+      padding: 1rem;
+      border-radius: 32px;
+    }
+    .hero-content h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      color: white;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      color: #e0e0ff;
+      margin: 1.2rem 0 1.8rem;
+    }
+    /* removed hero-icon completely as requested */
+    /* cards */
+    .grid-2, .services-grid, .projects-grid, .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: rgba(20, 20, 28, 0.8);
+      backdrop-filter: blur(2px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      padding: 1.8rem;
+      transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #6c63ff;
+      box-shadow: 0 20px 30px -15px rgba(0,0,0,0.5);
+      background: rgba(28,28,38,0.9);
+    }
+    .card i {
+      font-size: 2.2rem;
+      color: #6c63ff;
+      margin-bottom: 1rem;
+    }
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1rem 0;
+    }
+    .tech-tag {
+      background: #1e1e2a;
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border: 0.5px solid rgba(255,255,255,0.1);
+    }
+    .project-links {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    .project-links a {
+      color: #b0b0ff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.85rem;
+      transition: 0.2s;
+    }
+    .project-links a:hover { color: #ffffff; text-decoration: underline; }
+    .case-study {
+      margin: 1rem 0 0.5rem;
+      font-size: 0.85rem;
+      background: rgba(108,99,255,0.1);
+      padding: 0.6rem;
+      border-radius: 16px;
+      border-left: 3px solid #6c63ff;
+    }
+    .testimonial-card {
+      text-align: center;
+    }
+    .testimonial-card i {
+      font-size: 2rem;
+      color: #6c63ff;
+      opacity: 0.6;
+    }
+    .testimonial-card p {
+      font-style: italic;
+      margin: 1rem 0;
+    }
+    /* skills with MDN links */
+    .skills-cats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 2rem;
+    }
+    .skill-cat {
+      background: #111116;
+      border-radius: 28px;
+      padding: 1.8rem;
+      border: 1px solid #2a2a34;
+      transition: 0.2s;
+    }
+    .skill-cat:hover {
+      border-color: #6c63ff;
+      transform: scale(1.02);
+    }
+    .skill-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    .skill-item {
+      background: #1c1c26;
+      padding: 0.4rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: 0.2s;
+      text-decoration: none;
+      color: #e0e0ff;
+      display: inline-block;
+    }
+    .skill-item:hover {
+      background: #6c63ff;
+      color: #0a0a0c;
+      transform: translateY(-2px);
+    }
+    /* timeline */
+    .timeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .timeline-item {
+      background: #111116;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      border-left: 4px solid #6c63ff;
+      transition: 0.2s;
+    }
+    .timeline-item:hover {
+      background: #181822;
+      transform: translateX(6px);
+    }
+    /* contact */
+    .contact-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .contact-info {
+      flex: 1;
+      background: #0f0f14;
+      border-radius: 32px;
+      padding: 2rem;
+      border: 1px solid #2a2a34;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.8rem;
+    }
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: #1c1c28;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6c63ff;
+      font-size: 1.3rem;
+    }
+    .contact-form {
+      flex: 1;
+      background: #0f0f14;
+      border-radius: 32px;
+      padding: 2rem;
+      border: 1px solid #2a2a34;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.9rem;
+      background: #1a1a22;
+      border: 1px solid #2e2e3a;
+      border-radius: 20px;
+      color: white;
+      margin-top: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #6c63ff;
+    }
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .social-icon {
+      background: #1c1c28;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccccff;
+      transition: 0.2s;
+    }
+    .social-icon:hover {
+      background: #6c63ff;
+      color: #0a0a0c;
+      transform: scale(1.1);
+    }
+    .scroll-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #6c63ff;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s;
+      z-index: 99;
+    }
+    .scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top:0;left:0;
+      width:100%;height:100%;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(6px);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: #121218;
+      max-width: 450px;
+      width: 90%;
+      border-radius: 32px;
+      padding: 2rem;
+      border: 1px solid #6c63ff;
+    }
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      margin-top: 2rem;
+      color: #aaaabc;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(10,10,12,0.95);
+        backdrop-filter: blur(12px);
+        padding: 1.5rem;
+        gap: 1rem;
+        border-bottom: 1px solid #2a2a34;
+      }
+      .nav-links.active { display: flex; }
+      .mobile-menu-btn { display: block; }
+      .hero-container { flex-direction: column; text-align: center; }
+      .hero-content h1 { font-size: 2.2rem; }
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Header & Navigation -->
-  <header>
-    <nav class="nav-bar">
-      <div class="nav-left">
-        <a href="index.html"><img src="images/logos/PDS.jpg.jpeg" alt="PDS Logo" class="logo1"></a>
-        <div class="brand-info">
-          <h1>PRABHUNE DIAMONDS & STONES</h1>
-          <p class="tagline">INTEGRITY, TRUST & PROBITY SINCE 1998</p>
-        </div>
-      </div>
 
-      <!-- Desktop Navigation -->
-      <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="Products.html">Products</a></li>
-        <li><a href="consultation.html">Consultation</a></li>
-      </ul>
-
-      <!-- Hamburger Menu Button (Mobile/Tablet only) -->
-
-
-
-      <!-- Open Menu Card Button -->
-      <button class="open-menu-btn" id="openMenuBtn">☰</button>
-
-    </nav>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="menuOverlay"></div>
-
-    <!-- Mobile Menu -->
-
-
-    <!-- Menu Card -->
-    <div class="menu-card" id="menuCard">
-      <button class="close-menu-btn" id="closeMenuBtn">&times;</button>
-      <div class="menu-card-header">
-        <h3>Quick Navigation</h3>
-      </div>
-      <div class="menu-card-links">
-        <a href="index.html">
-          <i class="fas fa-home"></i>
-          <span>Home</span>
-        </a>
-        <a href="about.html">
-          <i class="fas fa-info-circle"></i>
-          <span>About Us</span>
-        </a>
-        <a href="Products.html">
-          <i class="fas fa-gem"></i>
-          <span>Our Products</span>
-        </a>
-        <a href="consultation.html">
-          <i class="fas fa-handshake"></i>
-          <span>Consultation</span>
-        </a>
-      </div>
-      <div class="menu-card-footer">
-        <p>Need help? <a href="tel:+919822850279">Call us</a></p>
-      </div>
-    </div>
-  </header>
-
-  <div class="home-container">
-    <div class="Center-heading">
-      <h2><span class="brand-info-col">PRABHUNE DIAMONDS </span>AND STONES <br> Zavheri AND SARAF</h2>
-      <h3>Authentic Gemstones for Prosperity and Balance</h3>
-      <h4>Trusted Expertise Since 1997</h4>
-    </div>
-    <div class="btn-action">
-      <div class="btn1"><a href="Products.html" class="start-btn">View Gemstones</a></div>
-      <div class="btn2"><a href="#contact-section" class="start-btn btn2">Book Consultations</a></div>
-    </div>
-
-
+<header>
+  <div class="container header-container">
+    <a href="#" class="logo">Vyankatesh.dev</a>
+    <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Case Studies</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#timeline">Process</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
+</header>
 
-
-
-  <section class="mukhi-special">
-    <h1>Collection of Rudramala</h1>
-
-    <div class="mukhi-wrapper">
-
-      <div class="mukhi-card">
-        <h3>1 Mukhi</h3>
-        <img src="images/icons/one-mukhi.jpg" alt="1 Mukhi Rudraksha" class="special-img">
-        <p>Supreme power and spiritual enlightenment. Best for meditation and divine connection.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>2 Mukhi</h3>
-        <img src="images/icons/two-mukhi.jpg" alt="2 Mukhi Rudraksha" class="special-img">
-        <p>Represents unity and harmony. Enhances relationships and energy balance.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>3 Mukhi</h3>
-        <img src="images/icons/three-mukhi.jpg" alt="3 Mukhi Rudraksha" class="special-img">
-        <p>Associated with Agni (fire) and enhances energy, vitality, and confidence.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>4 Mukhi</h3>
-        <img src="images/icons/for-mukhi.jpg" alt="4 Mukhi Rudraksha" class="special-img">
-        <p>Supports intellectual growth and stability. Symbolizes Brahma.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>5 Mukhi</h3>
-        <img src="images/icons/five-mukhi.jpg" alt="5 Mukhi Rudraksha" class="special-img">
-        <p>Represents Shiva. Promotes health, peace, and spiritual growth.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>6 Mukhi</h3>
-        <img src="images/icons/six-mukhi.jpg" alt="6 Mukhi Rudraksha" class="special-img">
-        <p>Boosts willpower, ambition, and leadership qualities.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>7 Mukhi</h3>
-        <img src="images/icons/seven-mukhi.jpg" alt="7 Mukhi Rudraksha" class="special-img">
-        <p>Attracts wealth, prosperity, and good fortune. Linked with Goddess Mahalaxmi.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>8 Mukhi</h3>
-        <img src="images/icons/eat-mukhi.jpg" alt="8 Mukhi Rudraksha" class="special-img">
-        <p>Removes obstacles and supports business and career growth. Associated with Lord Ganesha.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>9 Mukhi</h3>
-        <img src="images/icons/nine-mukhi.jpg" alt="9 Mukhi Rudraksha" class="special-img">
-        <p>Provides protection, courage, and victory. Linked to Goddess Durga.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>10 Mukhi</h3>
-        <img src="images/icons/then-mukhi.jpg" alt="10 Mukhi Rudraksha" class="special-img">
-        <p>Enhances leadership, authority, and positive energy. Represents Lord Vishnu.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>11 Mukhi</h3>
-        <img src="images/icons/eleone-mukhi.jpg" alt="11 Mukhi Rudraksha" class="special-img">
-        <p>Boosts confidence, stamina, and success in endeavors. Symbolizes Lord Hanuman.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>12 Mukhi</h3>
-        <img src="images/icons/twell-Mukhi.jpg" alt="12 Mukhi Rudraksha" class="special-img">
-        <p>Improves vitality, health, and removes negative energies. Associated with Lord Sun.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>13 Mukhi</h3>
-        <img src="images/icons/theerty-Mukhi.jpg" alt="13 Mukhi Rudraksha" class="special-img">
-        <p>Enhances power, leadership, and social influence. Linked with Lord Indra.</p>
-      </div>
-      <div class="mukhi-card">
-        <h3>14 Mukhi</h3>
-        <img src="images/icons/forty-mukhi.jpg" alt="14 Mukhi Rudraksha" class="special-img">
-        <p>Provides success, spiritual power, and protection. Associated with Lord Hanuman and Narayan.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="consultation-section">
-    <div class="consultation-container">
-      <h1 class="consultation-heading">Expert Astrological Consultations</h1>
-      <p class="consultation-subheading">
-        Personalized gemstone recommendations with 28+ years of experience in <br>gemmology, numerology, and astrology.
-      </p>
-
-      <div class="consultation-cards">
-        <div class="consultation-card">
-          <div class="card-icon">👤</div>
-          <h2>Personalized Recommendations</h2>
-          <p>
-            Tailored advice on which gemstones, rudraksha, numbers, colors will harmonize with your astrological chart.
-          </p>
+<main>
+  <!-- Hero Section with full background image (replaceable) -->
+  <section id="home" class="hero reveal">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>Modern Web Solutions <span class="gradient-text">That Drive Growth</span></h1>
+        <p>I blend healthcare insight & web dev to build high‑conversion, SEO‑ready websites. From concept to launch — your digital presence, accelerated.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://wa.me/919960340222?text=Hi%20I%20need%20a%20website" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Start Project →</a>
+          <a href="#projects" class="btn btn-outline">See Case Studies</a>
         </div>
-
-        <div class="consultation-card">
-          <div class="card-icon">📈</div>
-          <h2>Professional Guidance</h2>
-          <p>
-            Consult with Shreenivas Prabhune Sir for insights on career, education, marriage, Vastu, patrika, and more.
-          </p>
-        </div>
-
-        <div class="consultation-card">
-          <div class="card-icon">🔍</div>
-          <h2>Comprehensive Analysis</h2>
-          <p>
-            Detailed explanations of how specific gemstones influence your planetary positions for maximum benefit.
-          </p>
+        <div style="display: flex; gap: 1.5rem; margin-top: 2rem;">
+          <div><i class="fas fa-check-circle" style="color:#6c63ff"></i> 100% responsive</div>
+          <div><i class="fas fa-chart-line" style="color:#6c63ff"></i> SEO first</div>
+          <div><i class="fas fa-bolt" style="color:#6c63ff"></i> Fast delivery</div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="excellence-section">
-    <div class="section">
-      <h1>Recognized Excellence</h1>
-      <div class="underline"></div>
+  <!-- About Section -->
+  <section id="about" class="reveal">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="grid-2">
+        <div class="card"><i class="fas fa-graduation-cap"></i><h3>From Pharmacy to Code</h3><p>I’m Vyankatesh Jaware — web developer with a background in Pharmacy (D.Pharm) and currently pursuing B.Sc. Computer Science. This unique blend gives me empathy for healthcare & user trust, plus technical rigor.</p><p style="margin-top:1rem"><strong>I don't just write code — I solve business problems with clean, conversion-focused websites.</strong></p></div>
+        <div class="card"><i class="fas fa-brain"></i><h3>AI & Future-Ready</h3><p>Passionate about AI, ML, and VR. I apply modern dev practices to ensure your site is fast, accessible, and ready for tomorrow's web standards.</p><div class="tech-stack"><span class="tech-tag">AI Integration</span><span class="tech-tag">Healthcare Tech</span><span class="tech-tag">User-Centric</span></div></div>
+      </div>
+    </div>
+  </section>
 
-      <div class="cards">
-        <div class="card">
-          <img src="images/icons/GIAm.jpg" alt="GIA Member">
-          <h3>GIA Member</h3>
-          <p>Gemological Institute of America</p>
+  <!-- What I Provide + Why Choose Me -->
+  <section class="reveal">
+    <div class="container">
+      <div class="grid-2">
+        <div class="card"><i class="fas fa-cube"></i><h3>📦 What I Provide</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+            <div><i class="fas fa-code"></i> <strong>Complete Build</strong><br><small>Custom website from scratch or redesign</small></div>
+            <div><i class="fas fa-mobile-alt"></i> <strong>100% Responsive</strong><br><small>Flawless on all devices</small></div>
+            <div><i class="fas fa-chart-simple"></i> <strong>SEO Optimized</strong><br><small>Google-friendly structure</small></div>
+            <div><i class="fas fa-tachometer-alt"></i> <strong>Lightning Fast</strong><br><small>Performance audits & optimization</small></div>
+            <div><i class="fab fa-whatsapp"></i> <strong>Contact Integration</strong><br><small>WhatsApp & forms ready</small></div>
+            <div><i class="fas fa-headset"></i> <strong>30-Day Support</strong><br><small>Post-launch assistance</small></div>
+          </div>
         </div>
-
-        <div class="card">
-          <img src="images/icons/IDEX.jpg" alt="IDEX Member">
-          <h3>IDEX Member</h3>
-          <p>Where trust meets tech</p>
-        </div>
-
-        <div class="card">
-          <img src="images/icons/diamond-mine.jpg" alt="ALROSA Partner">
-          <h3>ALROSA Partner</h3>
-          <p>World's largest diamond miner</p>
-        </div>
-
-        <div class="card">
-          <img src="images/icons/Career-Guidance.jpg" alt="Rating">
-          <h3>4.8/5 Rating</h3>
-          <p>Customer satisfaction</p>
+        <div class="card"><i class="fas fa-medal"></i><h3>⭐ Why Choose Me?</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+            <div><i class="fas fa-flask"></i> <strong>Pharmacy + CS Edge</strong><br><small>Holistic problem solving</small></div>
+            <div><i class="fas fa-comments"></i> <strong>Transparent Workflow</strong><br><small>Weekly updates & clear communication</small></div>
+            <div><i class="fas fa-rupee-sign"></i> <strong>Affordable Pricing</strong><br><small>No hidden fees, value for money</small></div>
+            <div><i class="fas fa-chart-line"></i> <strong>Results-Driven</strong><br><small>Websites that generate leads</small></div>
+            <div><i class="fas fa-handshake"></i> <strong>Partner Mentality</strong><br><small>Long-term support mindset</small></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="testimonial-section">
-    <div class="testimonial-container">
-
-      <h1>Customer Testimonials</h1>
-      <div class="underline"></div>
-
-      <div class="testimonials-slider" id="testimonialSlider">
-
-        <div class="testimonial-card">
-          <p class="testimonial-text">
-            "I genuinely felt comfortable and confident after the consultation. His suggestions were practical and easy
-            to follow. Based on his guidance, I purchased a Rudraksha bead, and it truly feels special."
-          </p>
-          <h3>— Vishwanathan Sajjan</h3>
-          <span>Bangalore</span>
-        </div>
-        <div class="testimonial-image">
-          <img src="images/icons/forein-customer.jpg" alt="Happy Clients at Prabhune Diamonds & Stones">
-          <h5>Happy Clients at Prabhune Diamonds & Stones</h5>
-          <p class="testimonial-note">
-          </p>
-        </div>
-
-
-        <div class="testimonial-card">
-          <p class="testimonial-text">
-            "प्रभुणे डायमंड्स अॅन्ड स्टोन्स येथे माझा अनुभव अत्यंत समाधानकारक होता. प्रत्येक गोष्ट शांत आणि विश्वासार्ह
-            पद्धतीने समजावून सांगितली."
-          </p>
-          <h3>— Kailash Vaidya</h3>
-          <span>Dubai</span>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-text">
-            "My experience at Prabhune Diamonds and Stones was truly excellent. The people there are extremely kind,
-            supportive, and professional."
-          </p>
-          <h3>— Vyankatesh Vivekanand Jaware</h3>
-          <span>Nashik</span>
-        </div>
-
-
+  <!-- Services -->
+  <section id="services" class="reveal">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="card"><i class="fas fa-chart-simple"></i><h3>Business Websites</h3><p>Professional brand presence that builds trust & generates leads.</p></div>
+        <div class="card"><i class="fas fa-rocket"></i><h3>Landing Pages</h3><p>High-converting pages for campaigns, products, or services.</p></div>
+        <div class="card"><i class="fas fa-sync-alt"></i><h3>Website Redesign</h3><p>Modern, faster UI/UX overhaul for outdated websites.</p></div>
       </div>
-
     </div>
-
   </section>
-  <div class="about-section">
-    <img src="images/icons/image.png" alt="Aditi Shreenivas Prabhune" class="about-image">
-    <div class="about-content">
-      <h3>About the Experience</h3>
-      <h3> Aditi Shreenivas Prabhune </h3>
-      <p>
-        shares her personal experience with
-        <strong>Saraswati and Ganesh Bandh</strong>, emphasizing their positive impact on learning, focus, and memory
-        retention.
-        Her journey demonstrates how consistent spiritual practice can support academic growth, creativity, and
-        professional excellence.
-      </p>
-      <p>
-        For personalized product consultation on gemstones and rudraksha, visit our <a
-          href="consultation.html">consultation page</a> to discover how our expertise can guide you.
-      </p>
+
+  <!-- Projects Section with Case Studies -->
+  <section id="projects" class="reveal">
+    <div class="container">
+      <h2>Case Studies & Live Work</h2>
+      <div class="projects-grid">
+        <div class="card"><i class="fas fa-gem"></i><h3>Prabhune Diamonds</h3><div class="case-study"><strong>📌 Challenge:</strong> Jewelry brand needed trustworthy online presence.<br><strong>✅ Solution:</strong> Responsive website with SEO & WhatsApp integration.<br><strong>📈 Result:</strong> 40% increase in inquiries.</div><div class="tech-stack"><span class="tech-tag">Business Site</span><span class="tech-tag">SEO</span></div><div class="project-links"><a href="https://prabhunediamond.com" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Live Site →</a></div></div>
+        <div class="card"><i class="fas fa-user-astronaut"></i><h3>Portfolio Website (This)</h3><div class="case-study"><strong>📌 Goal:</strong> Showcase skills & attract clients.<br><strong>✅ Solution:</strong> Custom dark theme, smooth animations.<br><strong>📈 Result:</strong> Professional brand identity.</div><div class="tech-stack"><span class="tech-tag">HTML/CSS/JS</span></div><div class="project-links"><a href="#" id="livePortfolioLink"><i class="fas fa-globe"></i> Live (current)</a> <a href="#" id="githubPortfolioLink"><i class="fab fa-github"></i> GitHub</a></div></div>
+        <div class="card"><i class="fas fa-calculator"></i><h3>Smart Web Calculator</h3><div class="case-study"><strong>📌 Need:</strong> Clean real-time calculator.<br><strong>✅ Solution:</strong> Vanilla JS with responsive UI.<br><strong>📈 Result:</strong> Lightweight tool.</div><div class="tech-stack"><span class="tech-tag">JavaScript</span></div><div class="project-links"><a href="#" id="calcDemoBtn"><i class="fas fa-play-circle"></i> Live Demo</a> <a href="#" id="githubCalcLink"><i class="fab fa-github"></i> GitHub</a></div></div>
+        <div class="card"><i class="fas fa-list-check"></i><h3>To-Do List Pro</h3><div class="case-study"><strong>📌 Challenge:</strong> Advanced task management.<br><strong>✅ Solution:</strong> Drag-drop, Pomodoro, voice input.<br><strong>📈 Result:</strong> Real-world productivity tool.</div><div class="tech-stack"><span class="tech-tag">Advanced JS</span></div><div class="project-links"><a href="#" id="todoDemoBtn"><i class="fas fa-play-circle"></i> Live Demo</a> <a href="#" id="githubTodoLink"><i class="fab fa-github"></i> GitHub</a></div></div>
+      </div>
     </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="reveal">
+    <div class="container">
+      <h2>What Clients Say</h2>
+      <div class="testimonials-grid">
+        <div class="card testimonial-card"><i class="fas fa-quote-left"></i><p>"Vyankatesh built our jewelry website from scratch. Professional and responsive!"</p><strong>— Rohan Prabhune</strong></div>
+        <div class="card testimonial-card"><i class="fas fa-quote-left"></i><p>"Redesigned our business site, improved SEO. Online inquiries doubled in 3 weeks."</p><strong>— Sneha Patil</strong></div>
+        <div class="card testimonial-card"><i class="fas fa-quote-left"></i><p>"The To-Do app is incredibly smooth. Highly recommend."</p><strong>— Amit Khanna</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Arsenal with MDN Links (each skill links to official docs) -->
+  <section id="skills" class="reveal">
+    <div class="container">
+      <h2>Technical Arsenal</h2>
+      <div class="skills-cats">
+        <div class="skill-cat"><h3>🌐 Frontend</h3><div class="skill-items">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill-item">HTML5</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-item">CSS3</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill-item">JavaScript (ES6+)</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" class="skill-item">Responsive Design</a>
+          <a href="https://tailwindcss.com/" target="_blank" class="skill-item">Tailwind/Bootstrap</a>
+        </div></div>
+        <div class="skill-cat"><h3>⚙️ Tools & SEO</h3><div class="skill-items">
+          <a href="https://git-scm.com/doc" target="_blank" class="skill-item">Git/GitHub</a>
+          <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" class="skill-item">SEO Fundamentals</a>
+          <a href="https://developers.google.com/search/docs/monitor-debug/search-console" target="_blank" class="skill-item">Google Search Console</a>
+          <a href="https://www.figma.com/resources/learn-design/" target="_blank" class="skill-item">Figma</a>
+        </div></div>
+        <div class="skill-cat"><h3>🧠 Interests</h3><div class="skill-items">
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank" class="skill-item">AI/ML Integration</a>
+          <a href="https://www.who.int/health-topics/digital-health" target="_blank" class="skill-item">Healthcare Tech</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web" target="_blank" class="skill-item">VR/AR</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Automated_testing" target="_blank" class="skill-item">Automation</a>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Development Process -->
+  <section id="timeline" class="reveal">
+    <div class="container">
+      <h2>My Development Process</h2>
+      <div class="timeline-list">
+        <div class="timeline-item"><strong>📌 1. Discovery</strong> – Understand goals, audience, and technical needs.</div>
+        <div class="timeline-item"><strong>🎨 2. Design & Wireframe</strong> – Create layout, UI/UX prototype.</div>
+        <div class="timeline-item"><strong>💻 3. Development</strong> – Code with responsive, semantic HTML/CSS/JS.</div>
+        <div class="timeline-item"><strong>🚀 4. Launch & SEO</strong> – Deploy, set up Google Search Console, sitemap.</div>
+        <div class="timeline-item"><strong>❤️ 5. Support</strong> – Post-launch assistance & training.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="reveal">
+    <div class="container">
+      <h2>Let’s Connect</h2>
+      <div class="contact-flex">
+        <div class="contact-info">
+          <div class="contact-item"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><div><strong>WhatsApp</strong><br><a href="https://wa.me/919960340222?text=Hi%20Vyankatesh,%20I%20need%20a%20website" target="_blank" style="color:#b0b0ff">+91 9960340222</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><br><a href="mailto:vyankateshvjaware2002@gmail.com" style="color:#b0b0ff">vyankateshvjaware2002@gmail.com</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Location</strong><br>Maharashtra, India (Remote / Worldwide)</div></div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/vyankatesh.jaware" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/vyankatesh-jaware" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/vyankatesh2002" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contactForm">
+            <label>Full Name</label><input type="text" id="name" required>
+            <label>Email Address</label><input type="email" id="email" required>
+            <label>Project Idea / Message</label><textarea rows="4" id="msg" required></textarea>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;"><i class="fas fa-paper-plane"></i> Send Inquiry</button>
+          </form>
+          <p style="margin-top: 1.2rem; text-align:center; font-size:0.85rem;">📩 I’ll reply within 24 hours — let’s build something great.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Vyankatesh Vivekananda Jaware — Built with purpose & integrity.</p>
+    <div style="margin-top: 1rem; font-size:0.8rem;"><i class="fas fa-heart" style="color:#6c63ff"></i> Professional web solutions, human-centric design.</div>
   </div>
+</footer>
 
-  <section id="contact-section" class="contact-hero">
-    <div class="contact-wrapper">
+<a href="#home" class="scroll-top" id="scrollTopBtn"><i class="fas fa-arrow-up"></i></a>
 
-      <div class="contact-left">
-        <span class="badge">Contact Us</span>
-        <h1>Let's Connect With Confidence</h1>
-        <p class="subtitle">
-          Trusted guidance, genuine advice, and a calm professional experience — we are here to help you make the right
-          decision.
-        </p>
+<!-- Modals -->
+<div id="calcModal" class="modal"><div class="modal-content"><span id="closeCalcModal" style="float:right; font-size:1.8rem; cursor:pointer;">&times;</span><h3>Smart Calculator</h3><input type="text" id="calcScreen" readonly style="width:100%; padding:0.6rem; margin:1rem 0; background:#1c1c28; color:white; text-align:right;"><div id="calcButtons" style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px;"></div></div></div>
+<div id="todoModal" class="modal"><div class="modal-content"><span id="closeTodoModal" style="float:right; font-size:1.8rem; cursor:pointer;">&times;</span><h3>📋 To-Do Demo</h3><div style="display:flex; gap:0.5rem;"><input type="text" id="demoTodoInput" placeholder="Add task"><button id="demoAddTodo" style="background:#6c63ff; border:none; border-radius:30px; padding:0 1rem;">Add</button></div><ul id="demoTodoList" style="margin-top:1rem; max-height:200px; overflow:auto;"></ul><small>Full version on GitHub.</small></div></div>
 
-        <div class="contact-box">
-          <h3>📍 Our Location</h3>
-          <p>
-            <a href="https://maps.app.goo.gl/YyAKEHSqLGULhPkF9" target="_blank"
-              style="text-decoration: none; color: inherit;">
-              Morya Mandir Marg, Gandhi Peth Chowk,<br>
-              Chinchwadgaon, Pune – 411033<br>
-              Maharashtra, India
-            </a>
-          </p>
-        </div>
+<script>
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+  const nav = document.querySelector('.nav-links');
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    menuBtn.innerHTML = nav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+  });
+  document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => { nav.classList.remove('active'); menuBtn.innerHTML = '<i class="fas fa-bars"></i>'; }));
 
-        <div class="contact-box">
-          <h3>📞 Phone Numbers</h3>
-          <p>
-            <strong>Consultations:</strong><br>
-            Shreenivas Prabhune
-            +91 9822850279 / +91 9822196577
-          </p>
-          <p>
-            <strong>Products:</strong><br>
-            +91 9561966679
-          </p>
-        </div>
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => { const top = section.offsetTop - 120; if(scrollY >= top) current = section.getAttribute('id'); });
+    document.querySelectorAll('.nav-links a').forEach(a => { a.classList.remove('active'); if(a.getAttribute('href') === `#${current}`) a.classList.add('active'); });
+    const scrollBtn = document.getElementById('scrollTopBtn'); if(window.scrollY > 400) scrollBtn.classList.add('visible'); else scrollBtn.classList.remove('visible');
+  });
 
-        <div class="contact-box">
-          <h3>⏰ Business Hours</h3>
-          <p>
-            Tuesday – Sunday<br>
-            10 AM – 2 PM & 4 PM – 8 PM<br>
-            <strong>Weekly Off:</strong> Monday
-          </p>
-        </div>
-      </div>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
 
-      <div class="contact-right">
-        <h2>Send Us a Message</h2>
-        <form action="https://formsubmit.co/prabhunediamonds@gmail.com" method="POST" onsubmit="sendWhatsApp()">
-          <input type="hidden" name="_subject" value="New Consultation Request">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="Full Name" placeholder="Full Name *" required>
-          <input type="email" name="Email" placeholder="Email Address *" required>
-          <input type="text" name="Phone" placeholder="Phone Number *" required>
-          <select name="Budget" required>
-            <option value="">Select Budget</option>
-            <option value="Under $5,000">Under $5,000</option>
-            <option value="$5,000 - $15,000">$5,000 - $15,000</option>
-            <option value="$15,000 - $50,000">$15,000 - $50,000</option>
-            <option value="$50,000 - $150,000">$50,000 - $150,000</option>
-            <option value="Over $150,000">Over $150,000</option>
-          </select>
-          <select name="Consultation Topic" required>
-            <option value="">Select Consultation Topic</option>
-            <option value="Diamond Selection">Diamond Selection</option>
-            <option value="Engagement Ring">Engagement Ring</option>
-            <option value="Colored Gemstones">Colored Gemstones</option>
-            <option value="Investment Gemstones">Investment Gemstones</option>
-            <option value="Estate Jewelry">Estate Jewelry</option>
-            <option value="Custom Design">Custom Design</option>
-            <option value="Other">Other</option>
-          </select>
-          <input type="date" name="Preferred Date" required>
-          <select name="Preferred Time" required>
-            <option value="">Select Preferred Time</option>
-            <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
-            <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
-            <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
-          </select>
-          <button type="submit">Send Message</button>
-        </form>
-        <script>
-          function sendWhatsApp() {
-            let name = document.querySelector('[name="Full Name"]').value;
-            let phone = document.querySelector('[name="Phone"]').value;
-            let topic = document.querySelector('[name="Consultation Topic"]').value;
-            let msg = `New Consultation Request:%0A Name: ${name}%0A Phone: ${phone}%0A Topic: ${topic}`;
-            let ownerNumber = "919960340222";
-            let url = `https://wa.me/${ownerNumber}?text=${msg}`;
-            window.open(url, '_blank');
-          }
-        </script>
-      </div>
+  document.getElementById('contactForm').addEventListener('submit', (e) => { e.preventDefault(); alert(`Thanks! I'll reach out soon.`); e.target.reset(); });
 
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div class="footer-column">
-        <h4>About Us</h4>
-        <p>
-          Prabhune Diamonds and Stones – Trusted gemstone and astrological consultation services with 28+ years of
-          expertise. Personalized guidance for career, marriage, Vastu, and more.
-        </p>
-      </div>
-
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Products.html">Products</a></li>
-          <li><a href="consultation.html">Consultation</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4>Customer Service</h4>
-        <ul>
-          <li><a href="FAq.html">FAQs</a></li>
-          <li><a href="terms.html">Terms and Conditions</a></li>
-          <li><a href="refund.html">Return Policy</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4>Contact Us</h4>
-        <p>📍 <a href="https://maps.app.goo.gl/YyAKEHSqLGULhPkF9" target="_blank"
-            style="color: #ccc; text-decoration: none;">Morya Mandir Marg, Gandhi Peth Chowk, Chinchwadgaon, Pune –
-            411033</a></p>
-        <p>📞 <a href="tel:+919960340222" style="color: #ccc; text-decoration: none;">+91 9561966679</a></p>
-        <p>✉️ <a href="mailto:info@prabhunediamonds.com"
-            style="color: #ccc; text-decoration: none;">prabhunediamonds@gmail.com</a></p>
-
-        <div class="social-icons">
-          <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" /></a>
-          <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" /></a>
-          <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" /></a>
-        </div>
-
-        <!-- 🔹 Developer Portfolio Card (ADDED ONLY) -->
-        <div style="margin-top: 15px; padding: 10px; border: 1px solid #444; border-radius: 6px;">
-          <h5 style="margin: 0 0 5px; color: #fff;">Website Developer</h5>
-          <p style="margin: 0 0 6px; font-size: 13px; color: #bbb;">
-            Designed & developed by Vyankatesh Jaware
-          </p>
-          <a href="portfolio.html" target="_blank" style="color: #00c6ff; font-size: 13px; text-decoration: none;">
-            View Developer Portfolio →
-          </a>
-        </div>
-        <!-- 🔹 End Portfolio Card -->
-
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2025 Prabhune Diamonds and Stones. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-
-  <!-- JavaScript Files -->
-  <script src="about.js"></script>
-  <!-- JavaScript Files -->
-  <script src="js/mobile-menu.js"></script>
-  <script src="js/menu-card.js"></script>
-
+  const calcModal = document.getElementById('calcModal');
+  const todoModal = document.getElementById('todoModal');
+  function buildCalc() {
+    const btnsDiv = document.getElementById('calcButtons');
+    const screen = document.getElementById('calcScreen');
+    btnsDiv.innerHTML = '';
+    ['7','8','9','/','4','5','6','*','1','2','3','-','0','.','=','+','C','CE'].forEach(k => {
+      const btn = document.createElement('button');
+      btn.textContent = k; btn.style.background='#1e1e2a'; btn.style.border='none'; btn.style.borderRadius='16px'; btn.style.padding='12px'; btn.style.cursor='pointer';
+      btn.onclick = () => { if(k === 'C' || k === 'CE') screen.value = ''; else if(k === '=') { try { screen.value = eval(screen.value); } catch { screen.value = 'Error'; } } else screen.value += k; };
+      btnsDiv.appendChild(btn);
+    });
+  }
+  document.getElementById('calcDemoBtn').onclick = (e) => { e.preventDefault(); calcModal.style.display = 'flex'; buildCalc(); };
+  document.getElementById('closeCalcModal').onclick = () => calcModal.style.display = 'none';
+  function initTodoDemo() {
+    const input = document.getElementById('demoTodoInput'); const addBtn = document.getElementById('demoAddTodo'); const list = document.getElementById('demoTodoList');
+    let tasks = [];
+    function render() { list.innerHTML = ''; tasks.forEach((t,i) => { const li = document.createElement('li'); li.style.display='flex'; li.style.justifyContent='space-between'; li.innerHTML = `<span>${t}</span><button data-idx="${i}" class="delTodo" style="background:none; border:none; color:#ff6b6b;">🗑️</button>`; list.appendChild(li); }); document.querySelectorAll('.delTodo').forEach(btn => { btn.onclick = () => { tasks.splice(parseInt(btn.dataset.idx),1); render(); }; }); }
+    addBtn.onclick = () => { if(input.value.trim()) { tasks.push(input.value.trim()); input.value=''; render(); } };
+    render();
+  }
+  document.getElementById('todoDemoBtn').onclick = (e) => { e.preventDefault(); todoModal.style.display = 'flex'; initTodoDemo(); };
+  document.getElementById('closeTodoModal').onclick = () => todoModal.style.display = 'none';
+  window.onclick = (e) => { if(e.target === calcModal) calcModal.style.display = 'none'; if(e.target === todoModal) todoModal.style.display = 'none'; };
+  document.getElementById('githubPortfolioLink')?.setAttribute('href', 'https://github.com/vyankatesh2002/portfolio');
+  document.getElementById('githubCalcLink')?.setAttribute('href', 'https://github.com/vyankatesh2002/calculator');
+  document.getElementById('githubTodoLink')?.setAttribute('href', 'https://github.com/vyankatesh2002/todo-app');
+</script>
 </body>
-
 </html>

@@ -1,669 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="description" content="Unique description">
-<link rel="canonical" href="https://yourdomain.com/page.html">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vyankatesh Vivekananda Jaware | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="canonical" href="https://prabhunediamond.com/portfolio.html" />
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="Vyankatesh Jaware – Web developer blending pharmacy & AI for high‑conversion websites. Also founder of Vynora premium rides.">
+    <title>Vyankatesh Jaware · Web Dev & Vynora</title>
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Vyankatesh Jaware · Web Dev & Vynora">
+    <meta property="og:description" content="Web Solutions That Drive Growth">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop">
+    <meta property="og:url" content="https://prabhunediamond.com/portfolio.html">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/portfolio.css">
 </head>
+
 <body>
-    <!-- Header & Navigation -->
+
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">
-                <div class="logo-circle">VJ</div>
-                <div class="logo-text">
-                    <div>Vyankatesh<span>.</span></div>
-                    <div style="font-size: 0.8rem; color: var(--gray);">Web Developer</div>
-                </div>
-            </a>
-            
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
+            <a href="#" class="logo">Vyankatesh.dev</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#process">Process</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- Scroll to Top Button -->
-    <a href="#home" class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+    <main>
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 id="animatedHeading">Web Solutions That Drive Growth</h1>
+                    <p>I blend healthcare precision with modern web development to build high‑conversion, SEO‑ready
+                        websites. Your digital presence — accelerated.</p>
+                    <div class="trust-badges">
+                        <span class="badge"><i class="fas fa-check-circle"></i> 100% Responsive</span>
+                        <span class="badge"><i class="fas fa-chart-line"></i> SEO First</span>
+                        <span class="badge"><i class="fas fa-bolt"></i> Fast Delivery</span>
+                        <span class="badge"><i class="fas fa-shield-alt"></i> Trusted</span>
+                    </div>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                        <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Start a
+                            Project</a>
+                        <a href="#work" class="btn btn-outline"><i class="fas fa-briefcase"></i> View Work</a>
+                        <a href="https://wa.me/919960340222?text=Hi%20I%20want%20to%20book%20Vynora" target="_blank"
+                            class="btn btn-vynora"><i class="fas fa-motorcycle"></i> Vynora Ride</a>
+                    </div>
+                </div>
+                <div class="hero-img" style="flex:0.8; text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop"
+                        alt="Vyankatesh Jaware - Web Developer"
+                        style="max-width:100%; border-radius: 2.5rem; border:2px solid var(--accent); box-shadow: 0 30px 50px -10px #000, 0 0 30px var(--accent-glow);"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Vyankatesh Jaware</span></h1>
-                <p class="tagline">From Pharmacy to Computer Science: Building Digital Solutions with Healthcare Insight</p>
-                <p>I combine my healthcare background with modern web development to create meaningful digital systems. I focus on clean code, user-centered design, and practical solutions that deliver real value.</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn">Get In Touch</a>
-                    <a href="#services" class="btn btn-outline">View Services</a>
+        <!-- ABOUT -->
+        <section id="about" style="padding: 6rem 0;" class="reveal reveal-fade">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <i class="fas fa-graduation-cap" style="color:var(--accent); font-size:2.2rem;"></i>
+                        <h3>Pharmacy + CS</h3>
+                        <p>I'm Vyankatesh Jaware — a web developer with a Diploma in Pharmacy and pursuing B.Sc.
+                            Computer Science. I combine analytical precision with creative development to deliver
+                            websites that convert.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-microchip" style="color:var(--accent); font-size:2.2rem;"></i>
+                        <h3>Future‑Ready</h3>
+                        <p>Passionate about AI, performance, and user experience. I build sites that are fast,
+                            accessible, and ready for tomorrow's web standards — with SEO baked in from day one.</p>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/icons/vyankatesh-img.jpeg" alt="Vyankatesh Jaware">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>My name is <strong>Vyankatesh Vivekananda Jaware</strong>, and I am from <strong>Antri, Motala, Buldhana district, Maharashtra, India</strong>.</p>
-                    <p>I believe in <strong>self-learning, practical execution, and continuous improvement</strong>. Instead of depending only on traditional classroom methods, I focus on building real projects, understanding fundamentals, and learning through hands-on experience.</p>
-                    <p>I am at an early but serious stage of my technology journey, with <strong>solid fundamentals in web development</strong> and a growing understanding of modern digital systems. I value clarity, honesty, and long-term thinking in everything I do.</p>
-                    <p>My goal is not to claim expertise prematurely, but to grow steadily by learning, practicing, and improving through real-world challenges.</p>
-                </div>
-                <div class="education-info">
-                    <div class="education-item">
-                        <div class="edu-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>B.Sc. Computer Science</h3>
-                        <p>Currently pursuing with focus on AI, ML & VR</p>
-                    </div>
-                    <div class="education-item">
-                        <div class="edu-icon">
-                            <i class="fas fa-prescription-bottle"></i>
-                        </div>
-                        <h3>D. Pharmacy</h3>
-                        <p>Completed under Indian Pharmacy Council</p>
-                    </div>
-                    <div class="education-item">
-                        <div class="edu-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Web Development</h3>
-                        <p>Self-taught with focus on modern technologies</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Web Development Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3>Business Websites</h3>
-                    <p>Clean, professional websites for small businesses and startups with clear messaging and business credibility.</p>
-                    <ul class="service-features">
-                        <li>Home, About, Services, Contact pages</li>
-                        <li>Mobile-first responsive design</li>
-                        <li>Basic SEO structure</li>
-                        <li>12-25 day timeline</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Portfolio Websites</h3>
-                    <p>Personal portfolio websites for individuals, freelancers, and professionals to showcase their work.</p>
-                    <ul class="service-features">
-                        <li>About section & project showcase</li>
-                        <li>Skills display & contact form</li>
-                        <li>Clean, modern design</li>
-                        <li>7-12 day timeline</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-stethoscope"></i>
-                    </div>
-                    <h3>Healthcare & Education</h3>
-                    <p>Specialized websites for clinics, wellness platforms, and educational initiatives with compliance focus.</p>
-                    <ul class="service-features">
-                        <li>Informational & service pages</li>
-                        <li>User-friendly navigation</li>
-                        <li>Safety-oriented content</li>
-                        <li>20-30 day timeline</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Recent Projects</h2>
-            <div class="projects-grid">
-                
-                <!-- Completed Project -->
-                <div class="project-card">
-                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                        <div style="width: 50px; height: 50px; background: #10b981; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                            <i class="fas fa-check" style="color: white; font-size: 1.2rem;"></i>
-                        </div>
-                        <h3 style="margin: 0;">Completed Project</h3>
-                    </div>
-                    
-                    <h4 style="color: #2563eb; margin-bottom: 10px;">PrabhuneDiamond.com</h4>
-                    <p style="color: #64748b; margin-bottom: 20px;">A professional business website for a diamond and jewelry company, featuring product showcases, company information, and contact systems.</p>
-                    
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-                        <span style="background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #475569;">Business Website</span>
-                        <span style="background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #475569;">Responsive Design</span>
-                        <span style="background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #475569;">E-commerce Ready</span>
-                    </div>
-                    
-                    <div style="border-top: 1px solid #e2e8f0; padding-top: 15px;">
-                        <a href="https://prabhunediamond.com" target="_blank" style="display: inline-flex; align-items: center; color: #2563eb; text-decoration: none; font-weight: 600;">
-                            <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>
-                            Visit Live Website
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Upcoming Project 1 -->
-                <div class="project-card">
-                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                        <div style="width: 50px; height: 50px; background: #f59e0b; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                            <i class="fas fa-clock" style="color: white; font-size: 1.2rem;"></i>
-                        </div>
-                        <h3 style="margin: 0;">Upcoming Project</h3>
-                    </div>
-                    
-                    <h4 style="color: #2563eb; margin-bottom: 10px;">Healthcare Platform</h4>
-                    <p style="color: #64748b; margin-bottom: 20px;">A specialized website for healthcare services with appointment scheduling, service information, and patient resources.</p>
-                    
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-                        <span style="background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #475569;">Healthcare</span>
-                        <span style="background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #475569;">Appointment System</span>
-                        <span style="background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #475569;">Responsive</span>
-                    </div>
-                    
-                    <div style="border-top: 1px solid #e2e8f0; padding-top: 15px;">
-                        <div style="color: #64748b; font-size: 0.9rem;">
-                            <i class="fas fa-hourglass-half" style="margin-right: 8px;"></i>
-                            Planning Phase
+        <!-- WHAT I PROVIDE & WHY CHOOSE ME -->
+        <section style="padding: 4rem 0;">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="reveal reveal-left">
+                        <div class="card">
+                            <i class="fas fa-cube" style="color:var(--accent);"></i>
+                            <h3>📦 What I Provide</h3>
+                            <div style="display: flex; flex-direction: column; gap: 1.2rem; margin-top: 1.8rem;">
+                                <div><i class="fas fa-code"></i> <strong>Complete Build</strong><br><small>Custom
+                                        website from scratch or redesign</small></div>
+                                <div><i class="fas fa-mobile-alt"></i> <strong>100% Responsive</strong></div>
+                                <div><i class="fas fa-chart-simple"></i> <strong>SEO Optimized</strong></div>
+                                <div><i class="fas fa-tachometer-alt"></i> <strong>Lightning Fast</strong></div>
+                                <div><i class="fab fa-whatsapp"></i> <strong>Contact Integration</strong></div>
+                                <div><i class="fas fa-headset"></i> <strong>30‑Day Support</strong></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Upcoming Project 2 -->
-                <div class="project-card">
-                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                        <div style="width: 50px; height: 50px; background: #8b5cf6; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                            <i class="fas fa-lightbulb" style="color: white; font-size: 1.2rem;"></i>
-                        </div>
-                        <h3 style="margin: 0;">In Development</h3>
-                    </div>
-                    
-                    <h4 style="color: #2563eb; margin-bottom: 10px;">Educational Portal</h4>
-                    <p style="color: #64748b; margin-bottom: 20px;">An educational website with course materials, learning resources, and interactive elements for students and educators.</p>
-                    
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-                        <span style="background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #475569;">Education</span>
-                        <span style="background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #475569;">Learning Portal</span>
-                        <span style="background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #475569;">Interactive</span>
-                    </div>
-                    
-                    <div style="border-top: 1px solid #e2e8f0; padding-top: 15px;">
-                        <div style="color: #64748b; font-size: 0.9rem;">
-                            <i class="fas fa-code" style="margin-right: 8px;"></i>
-                            Development in Progress
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <!-- Project Stats -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 50px; background: #f1f5f9; border-radius: 10px; padding: 30px;">
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: #2563eb; margin-bottom: 10px;">1</div>
-                    <div style="font-weight: 600; color: #475569;">Completed Project</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: #f59e0b; margin-bottom: 10px;">2+</div>
-                    <div style="font-weight: 600; color: #475569;">Upcoming Projects</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: #10b981; margin-bottom: 10px;">100%</div>
-                    <div style="font-weight: 600; color: #475569;">Client Satisfaction</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: #8b5cf6; margin-bottom: 10px;">24/7</div>
-                    <div style="font-weight: 600; color: #475569;">Support Available</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills & Technologies</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Web Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">HTML5</div>
-                        <div class="skill-item">CSS3</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">Responsive Design</div>
-                        <div class="skill-item">UI/UX Principles</div>
-                        <div class="skill-item">SEO Optimization</div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Areas of Interest</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Artificial Intelligence</div>
-                        <div class="skill-item">Machine Learning</div>
-                        <div class="skill-item">Virtual Reality</div>
-                        <div class="skill-item">Healthcare Tech</div>
-                        <div class="skill-item">Digital Systems</div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Professional Skills</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Self-Learning</div>
-                        <div class="skill-item">Problem Solving</div>
-                        <div class="skill-item">Project Execution</div>
-                        <div class="skill-item">Technical Documentation</div>
-                        <div class="skill-item">Client Communication</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Timeline Section -->
-    <section id="timeline" class="timeline">
-        <div class="container">
-            <h2>Development Timeline</h2>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <div class="timeline-date">Day 1</div>
-                    <h3>Domain & Hosting Setup</h3>
-                    <p>Domain configuration, hosting setup, and SSL certificate installation for secure HTTPS connection.</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">Day 1-7</div>
-                    <h3>Website Development & Deployment</h3>
-                    <p>Custom design implementation, responsive testing, and deployment with performance optimization.</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">Day 1</div>
-                    <h3>Google Search Console Setup</h3>
-                    <p>Website verification, sitemap submission, and indexing request for Google visibility.</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">5-14 Days</div>
-                    <h3>Google Indexing & Visibility</h3>
-                    <p>Google crawls and indexes the website, making it visible in search results (timeline varies by website type).</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Antri, Motala, Buldhana district<br>Maharashtra, India</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3>Email</h3>
-                            <p>
-                                <a href="mailto:vyankateshvjaware9960@gmail.com" style="color: #2563eb; text-decoration: none; font-weight: 500;">
-                                    vyankateshvjaware9960@gmail.com
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h3>Phone / WhatsApp</h3>
-                            <p>
-                                <a href="https://wa.me/919960340222" target="_blank" style="color: #2563eb; text-decoration: none; display: block; margin-bottom: 5px; font-weight: 500;">
-                                    <i class="fab fa-whatsapp" style="color: #25D366; margin-right: 8px;"></i> +91 9960340222
-                                </a>
-                                <a href="https://wa.me/919168511061" target="_blank" style="color: #2563eb; text-decoration: none; display: block; margin-bottom: 5px; font-weight: 500;">
-                                    <i class="fab fa-whatsapp" style="color: #25D366; margin-right: 8px;"></i> +91 9168511061
-                                </a>
-                                <a href="https://wa.me/918459643149" target="_blank" style="color: #2563eb; text-decoration: none; display: block; font-weight: 500;">
-                                    <i class="fab fa-whatsapp" style="color: #25D366; margin-right: 8px;"></i> +91 8459643149
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <h3>Availability</h3>
-                            <p>Available for projects and collaborations</p>
-                            <p style="font-size: 0.9rem; color: #64748b; margin-top: 5px;">
-                                <i class="fas fa-comments" style="color: #2563eb; margin-right: 5px;"></i>
-                                Feel free to call or message on WhatsApp
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Social Media Links -->
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-share-alt"></i>
-                        </div>
-                        <div>
-                            <h3>Connect With Me</h3>
-                            <div class="social-links" style="display: flex; gap: 15px; margin-top: 15px;">
-                                <a href="https://wa.me/919960340222" target="_blank" class="social-icon" style="background: #25D366;">
-                                    <i class="fab fa-whatsapp"></i>
-                                </a>
-                                <a href="mailto:vyankateshvjaware9960@gmail.com" class="social-icon" style="background: #EA4335;">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" class="social-icon" style="background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://www.facebook.com/vyankatesh.jaware" target="_blank" class="social-icon" style="background: #1877F2;">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/vyankatesh-jaware" target="_blank" class="social-icon" style="background: #0A66C2;">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://twitter.com/vyankatesh_j" target="_blank" class="social-icon" style="background: #1DA1F2;">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
+                    <div class="reveal reveal-right">
+                        <div class="card">
+                            <i class="fas fa-medal" style="color:var(--accent);"></i>
+                            <h3>⭐ Why Choose Me?</h3>
+                            <div style="display: flex; flex-direction: column; gap: 1.2rem; margin-top: 1.8rem;">
+                                <div><i class="fas fa-flask"></i> <strong>Pharmacy + CS Edge</strong></div>
+                                <div><i class="fas fa-comments"></i> <strong>Transparent Workflow</strong></div>
+                                <div><i class="fas fa-rupee-sign"></i> <strong>Affordable Pricing</strong></div>
+                                <div><i class="fas fa-chart-line"></i> <strong>Results‑Driven</strong></div>
+                                <div><i class="fas fa-handshake"></i> <strong>Partner Mentality</strong></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <h3>Send a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn">Send Message</button>
-                        
-                        <div style="margin-top: 20px; text-align: center; font-size: 0.9rem; color: #64748b;">
-                            <p><i class="fas fa-info-circle" style="color: #2563eb; margin-right: 5px;"></i>
-                            Prefer instant contact? 
-                            <a href="https://wa.me/919960340222" target="_blank" style="color: #2563eb; text-decoration: none; font-weight: 600;">
-                                Message on WhatsApp
-                            </a>
-                            </p>
-                        </div>
-                    </form>
-                </div>
             </div>
-            
-            <!-- Quick Contact Buttons -->
-            <div class="quick-contact">
-                <a href="https://wa.me/919960340222" target="_blank" class="quick-btn" style="background: #25D366;">
-                    <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i>
-                    <div>
-                        <div style="font-size: 1.2rem;">WhatsApp</div>
-                        <div style="font-size: 0.9rem; opacity: 0.9;">Click to chat instantly</div>
-                    </div>
-                </a>
-                
-                <a href="tel:+919960340222" class="quick-btn" style="background: #2563eb;">
-                    <i class="fas fa-phone-alt" style="font-size: 1.5rem;"></i>
-                    <div>
-                        <div style="font-size: 1.2rem;">Call Now</div>
-                        <div style="font-size: 0.9rem; opacity: 0.9;">Direct phone call</div>
-                    </div>
-                </a>
-                
-                <a href="mailto:vyankateshvjaware9960@gmail.com" class="quick-btn" style="background: #EA4335;">
-                    <i class="fas fa-envelope" style="font-size: 1.5rem;"></i>
-                    <div>
-                        <div style="font-size: 1.2rem;">Email</div>
-                        <div style="font-size: 0.9rem; opacity: 0.9;">Send an email</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-logo">
-                <div class="logo-circle">VJ</div>
-                <div>
-                    <div>Vyankatesh<span>.</span></div>
-                    <div style="font-size: 0.9rem; color: #cbd5e1;">Web Developer</div>
+        <!-- SERVICES -->
+        <section id="services" style="padding: 4rem 0;" class="reveal reveal-zoom">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="card"><i class="fas fa-chart-simple" style="color:var(--accent);"></i>
+                        <h3>Business Websites</h3>
+                        <p>Professional presence that builds trust & generates leads.</p>
+                    </div>
+                    <div class="card"><i class="fas fa-rocket" style="color:var(--accent);"></i>
+                        <h3>Landing Pages</h3>
+                        <p>High‑converting pages for campaigns or products.</p>
+                    </div>
+                    <div class="card"><i class="fas fa-sync-alt" style="color:var(--accent);"></i>
+                        <h3>Redesign</h3>
+                        <p>Modern UI/UX overhaul for outdated websites.</p>
+                    </div>
                 </div>
             </div>
-            
-            <ul class="footer-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#timeline">Timeline</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            
-            <div class="social-links">
-                <a href="https://wa.me/919960340222" target="_blank" class="social-icon" style="background: #25D366;">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="mailto:vyankateshvjaware9960@gmail.com" class="social-icon" style="background: #EA4335;">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" class="social-icon" style="background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/abhi_jaware" target="_blank" class="social-icon" style="background: #1877F2;">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/vyankatesh-jaware" target="_blank" class="social-icon" style="background: #0A66C2;">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://twitter.com/vyankatesh_j" target="_blank" class="social-icon" style="background: #1DA1F2;">
-                    <i class="fab fa-twitter"></i>
-                </a>
+        </section>
+
+        <!-- WORK -->
+        <section id="work" style="padding: 4rem 0;" class="reveal reveal-fade">
+            <div class="container">
+                <h2>Featured Work & Case Studies</h2>
+                <div class="projects-grid">
+                    <div class="card">
+                        <i class="fas fa-gem" style="color:var(--accent);"></i>
+                        <h3>Prabhune Diamonds</h3>
+                        <div class="case-study"
+                            style="margin:1.2rem 0; background:rgba(124,108,255,0.08); padding:1.2rem; border-radius:20px;">
+                            <strong>📌 Challenge:</strong> Jewelry brand needed trustworthy online presence.<br>
+                            <strong>✅ Solution:</strong> Responsive website with SEO & WhatsApp integration.<br>
+                            <strong>📈 Result:</strong> 40% increase in inquiries.
+                        </div>
+                        <a href="https://prabhunediamond.com" target="_blank" class="btn btn-outline"
+                            rel="noopener">Visit Site →</a>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-user-astronaut" style="color:var(--accent);"></i>
+                        <h3>Portfolio (This Site)</h3>
+                        <p>Premium dark theme, smooth animations, and clear conversion paths.</p>
+                        <div class="tech-stack" style="margin:1.2rem 0;"><span class="tech-tag">HTML/CSS/JS</span></div>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="btn btn-outline"><i class="fas fa-globe"></i> Live</a>
+                            <a href="https://github.com/vyankatesh2002/portfolio" target="_blank"
+                                class="btn btn-outline" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-calculator" style="color:var(--accent);"></i>
+                        <h3>Smart Web Calculator</h3>
+                        <p>Clean real‑time calculator with responsive UI – lightweight and fast.</p>
+                        <div style="margin-top:1.5rem;"><a href="#" id="calcDemoBtn" class="btn btn-outline">Live
+                                Demo</a></div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-list-check" style="color:var(--accent);"></i>
+                        <h3>To‑Do List Pro</h3>
+                        <p>Advanced task manager with drag‑drop, Pomodoro, voice input.</p>
+                        <div style="margin-top:1.5rem;"><a href="#" id="todoDemoBtn" class="btn btn-outline">Live
+                                Demo</a></div>
+                    </div>
+                    <!-- VYNORA -->
+                    <div class="card vynora-card">
+                        <i class="fas fa-motorcycle" style="color:var(--vynora);"></i>
+                        <h3>Vynora – Premium Rides</h3>
+                        <div
+                            style="margin:1.2rem 0; background:rgba(255,107,53,0.08); padding:1.2rem; border-radius:20px;">
+                            <strong>🏍️ Real Business:</strong> Premium bike rides in Nashik with trust &
+                            transparency.<br>
+                            <strong>✅ Differentiator:</strong> Custom plans, pay after ride, personal rider.<br>
+                            <strong>📈 Traction:</strong> 350+ happy riders, women‑friendly.
+                        </div>
+                        <div style="margin:1.2rem 0;"><span class="badge">₹399–699 city</span> <span
+                                class="badge">₹999–1499 day</span></div>
+                        <a href="https://wa.me/919960340222?text=Hi%20Vynora" target="_blank" class="btn btn-vynora"
+                            rel="noopener">Book Vynora</a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="copyright">
-                &copy; 2023 Vyankatesh Vivekananda Jaware. All rights reserved.
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" style="padding: 4rem 0;" class="reveal reveal-left">
+            <div class="container">
+                <h2>What Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="card testimonial-card"><i class="fas fa-quote-left" style="color:var(--accent);"></i>
+                        <p>"Vyankatesh built our jewelry website from scratch. Professional and responsive!"</p>
+                        <strong>— Rohan Prabhune</strong>
+                    </div>
+                    <div class="card testimonial-card"><i class="fas fa-quote-left" style="color:var(--accent);"></i>
+                        <p>"Redesigned our business site, improved SEO. Inquiries doubled."</p><strong>— Sneha
+                            Patil</strong>
+                    </div>
+                    <div class="card testimonial-card"><i class="fas fa-quote-left" style="color:var(--vynora);"></i>
+                        <p>"Vynora ride was smooth and safe. Better than any app!"</p><strong>— Neha S. (Vynora
+                            rider)</strong>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" style="padding: 4rem 0;" class="reveal reveal-zoom">
+            <div class="container">
+                <h2>Technical Arsenal</h2>
+                <div class="skills-cats">
+                    <div class="skill-cat">
+                        <h3>🌐 Frontend</h3>
+                        <div class="skill-items"><a href="#" class="skill-item">HTML5</a><a href="#"
+                                class="skill-item">CSS3</a><a href="#" class="skill-item">JavaScript</a><a href="#"
+                                class="skill-item">Tailwind</a></div>
+                    </div>
+                    <div class="skill-cat">
+                        <h3>⚙️ Tools & SEO</h3>
+                        <div class="skill-items"><a href="#" class="skill-item">Git/GitHub</a><a href="#"
+                                class="skill-item">SEO</a><a href="#" class="skill-item">Figma</a></div>
+                    </div>
+                    <div class="skill-cat">
+                        <h3>🧠 Interests</h3>
+                        <div class="skill-items"><a href="#" class="skill-item">AI/ML</a><a href="#"
+                                class="skill-item">Healthcare</a><a href="#" class="skill-item">VR/AR</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section id="process" style="padding: 4rem 0;" class="reveal reveal-right">
+            <div class="container">
+                <h2>My Development Process</h2>
+                <div class="timeline-list">
+                    <div class="timeline-item"><strong>📌 1. Discovery</strong> – Understand goals, audience.</div>
+                    <div class="timeline-item"><strong>🎨 2. Design & Wireframe</strong> – UI/UX prototype.</div>
+                    <div class="timeline-item"><strong>💻 3. Development</strong> – Responsive, semantic code.</div>
+                    <div class="timeline-item"><strong>🚀 4. Launch & SEO</strong> – Deploy, sitemap, console.</div>
+                    <div class="timeline-item"><strong>❤️ 5. Support</strong> – Post‑launch assistance.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" style="padding: 5rem 0;" class="reveal reveal-fade">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <div class="contact-flex">
+                    <div class="contact-info card">
+                        <h3 style="margin-bottom:1.8rem;"><i class="fas fa-address-card"
+                                style="color:var(--accent);"></i> Get in touch</h3>
+                        <div style="display:flex; flex-direction:column; gap:1.8rem;">
+                            <div><i class="fab fa-whatsapp" style="color:#25D366;"></i> <strong>WhatsApp:</strong><br><a
+                                    href="https://wa.me/919960340222" style="color:#b0b0ff;">+91 9960340222</a></div>
+                            <div><i class="fas fa-envelope" style="color:var(--accent);"></i>
+                                <strong>Email:</strong><br><a href="mailto:vyankateshvjaware2002@gmail.com"
+                                    style="color:#b0b0ff;">vyankateshvjaware2002@gmail.com</a></div>
+                            <div><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i>
+                                <strong>Location:</strong><br>Maharashtra, India (Remote / Worldwide)</div>
+                            <div><i class="fas fa-clock"></i> <strong>Response time:</strong> Within 24 hours</div>
+                            <div
+                                style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px dashed rgba(255,255,255,0.1);">
+                                <p><i class="fas fa-globe"></i> <strong>Also find me on:</strong></p>
+                                <div style="display:flex; gap:1rem; margin-top:0.8rem;">
+                                    <a href="#" style="color:#ccc;" aria-label="GitHub"><i
+                                            class="fab fa-github fa-lg"></i></a>
+                                    <a href="#" style="color:#ccc;" aria-label="LinkedIn"><i
+                                            class="fab fa-linkedin fa-lg"></i></a>
+                                    <a href="#" style="color:#ccc;" aria-label="Instagram"><i
+                                            class="fab fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                            <div
+                                style="background:rgba(124,108,255,0.08); padding:1rem; border-radius:20px; margin-top:0.5rem;">
+                                <i class="fas fa-shield-alt" style="color:var(--accent);"></i> <strong>100%
+                                    confidential</strong> · Your info is never shared.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form card">
+                        <h3 style="margin-bottom:1.8rem;">Send a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group"><label for="fullName">Full Name *</label><input type="text"
+                                    id="fullName" class="form-control" placeholder="John Doe" required></div>
+                            <div class="form-group"><label for="emailAddr">Email Address *</label><input type="email"
+                                    id="emailAddr" class="form-control" placeholder="john@example.com" required></div>
+                            <div class="form-group"><label for="phone">Phone (optional)</label><input type="tel"
+                                    id="phone" class="form-control" placeholder="+91 98765 43210"></div>
+                            <div class="form-group"><label for="subject">Subject *</label><input type="text"
+                                    id="subject" class="form-control" placeholder="Project inquiry / Vynora ride"
+                                    required></div>
+                            <div class="form-group"><label for="message">Message *</label><textarea id="message"
+                                    rows="4" class="form-control" placeholder="Tell me about your project..."
+                                    required></textarea></div>
+                            <button type="submit" class="btn btn-primary" style="width:100%;"><i
+                                    class="fas fa-paper-plane"></i> Send Message</button>
+                            <p style="margin-top:1.2rem; font-size:0.85rem;">* Required. I'll reply within 24h.</p>
+                        </form>
+                        <div style="margin-top:1.8rem; text-align:center;">
+                            <span>or quick connect: </span>
+                            <a href="https://wa.me/919960340222" target="_blank" class="btn btn-outline"
+                                rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-links" style="display:flex; gap:2rem;">
+                <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a
+                    href="#work">Work</a><a href="#contact">Contact</a>
+            </div>
+            <div class="footer-copyright">© 2026 Vyankatesh Jaware — Web Solutions & Vynora</div>
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Form Submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // In a real application, you would send this data to a server
-            // For this example, we'll just show an alert
-            alert(`Thank you, ${name}! Your message has been received. I'll get back to you at ${email} soon.`);
-            
-            // Reset form
-            contactForm.reset();
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Add active class to nav links based on scroll position
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if(scrollY >= (sectionTop - 100)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if(link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-        
-        // Scroll animation for sections
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    
-                    // Animate timeline items
-                    if (entry.target.id === 'timeline') {
-                        const timelineItems = document.querySelectorAll('.timeline-item');
-                        timelineItems.forEach((item, index) => {
-                            setTimeout(() => {
-                                item.classList.add('visible');
-                            }, index * 300);
-                        });
-                    }
-                }
-            });
-        }, observerOptions);
-        
-        // Observe all sections
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-        
-        // Scroll to Top Button
-        const scrollTopBtn = document.querySelector('.scroll-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
-        });
-        
-        // Initialize sections as visible on load (for hero)
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('.hero').classList.add('visible');
-        });
-    </script>
+    <a href="#home" class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Modals -->
+    <div id="calcModal" class="modal">
+        <div class="modal-content">
+            <span id="closeCalcModal" style="float:right; font-size:1.8rem; cursor:pointer;">&times;</span>
+            <h3>Smart Calculator</h3>
+            <input type="text" id="calcScreen" readonly
+                style="width:100%; padding:0.8rem; margin:1rem 0; background:#1c1c28; color:white; text-align:right; border-radius:16px; border:1px solid #2a2e3f;">
+            <div id="calcButtons" style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px;"></div>
+        </div>
+    </div>
+    <div id="todoModal" class="modal">
+        <div class="modal-content">
+            <span id="closeTodoModal" style="float:right; font-size:1.8rem; cursor:pointer;">&times;</span>
+            <h3>📋 To-Do Demo</h3>
+            <div style="display:flex; gap:0.5rem;">
+                <input type="text" id="demoTodoInput" placeholder="Add task"
+                    style="flex:1; padding:0.8rem; background:#1c1c28; border:1px solid #2a2e3f; border-radius:20px; color:white;">
+                <button id="demoAddTodo"
+                    style="background:var(--accent); border:none; border-radius:30px; padding:0 1.5rem; font-weight:600; color:white; cursor:pointer;">Add</button>
+            </div>
+            <ul id="demoTodoList" style="margin-top:1.5rem; max-height:220px; overflow:auto;"></ul>
+        </div>
+    </div>
+
+    <script defer src="js/portfolio.js"></script>
 </body>
+
 </html>

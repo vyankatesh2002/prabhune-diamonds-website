@@ -1,13 +1,8 @@
-# Fix Products Page 404 Issue - TODO
+ # Portfolio Modularization TODO
 
-## Plan Progress
-- [x] Analyze files and identify casing inconsistency in links
-- [x] Step 1: Fix links in Products.html (4 instances of products.html → Products.html)
-- [x] Step 2: Fix links in about.html
-- [ ] Step 3: Fix links in consultation.html
-- [ ] Step 4: Fix links in terms.html
-- [x] Step 5: Update sitemap.xml lastmod dates
-- [ ] Step 6: Instructions for git commit/push and Google Search Console submission
-
-**Task Complete**
-
+- [x] 1. Create TODO.md ✅
+- [ ] 2. Extract & overwrite css/portfolio.css with premium dark theme CSS
+- [ ] 3. Extract & overwrite js/portfolio.js with interactive JS (modals, animations)
+- [ ] 4. Update portfolio.html to modular (link CSS/JS, remove inline)
+- [ ] 5. Test: Responsive, modals (calc/todo), form WA.me, animations
+- [ ] 6. Complete & demo command

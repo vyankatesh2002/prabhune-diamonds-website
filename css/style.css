@@ -162,12 +162,21 @@ header {
     transition: width 0.3s ease;
 }
 
-.nav li a:hover {
+.nav li a:hover,
+.nav li a.active {
     color: var(--primary-gold);
 }
 
-.nav li a:hover::after {
+.nav li a:hover::after,
+.nav li a.active::after {
     width: 100%;
+}
+
+.mobile-menu a.active,
+.menu-card-links a.active {
+    color: var(--primary-gold) !important;
+    background: rgba(212, 175, 55, 0.1) !important;
+    font-weight: 600;
 }
 
 /* Mobile Menu Buttons */

@@ -1,30 +1,38 @@
-# Project Organization Plan
+# NAVBAR STANDARDIZATION TODO
+✅ **Plan Approved** - User confirmed execution
 
-## Information Gathered
-- Current directory: Prabhune-Diamonds
-- HTML files in root: index.html, Products.html, about.html, consultation.html, faq.html, portfolio.html, terms.html, refund.html, privacy.html, sitemap.xml
-- Inconsistent names: FAq.html (should be faq.html), Refund .html (should be refund.html)
-- css/ contains: about.css, consultation.css, contact-enhanced.css, FAq.css, portfolio.css, privacy.css, Products.css, Refund.css, style.css, terms.css
-- js/ contains: about.js, index.js, menu-card.js, mobile-menu.js, portfolio.js, privacy.js, terms.js
-- images/ contains subdirs and many image files
-- Extra directories: backup/ (keep), contents/ (has index.html and js/main.js), portfolio/ (has css/portfolio.css and js/portfolio.js), styles/ (has Products.css), Prabhune-Diamonds/ (empty?), prabhunediamonds/ (empty?)
+## Implementation Steps:
 
-## Plan
-- Rename FAq.html to faq.html
-- Rename Refund .html to refund.html
-- Move contents/js/main.js to js/main.js (if not duplicate)
-- Move portfolio/css/portfolio.css to css/portfolio.css
-- Move portfolio/js/portfolio.js to js/portfolio.js
-- Move styles/Products.css to css/Products.css (check for duplicates)
-- Remove empty directories: Prabhune-Diamonds/, prabhunediamonds/
-- Ensure all CSS files are in css/, JS in js/, images in images/
-- Keep sitemap.xml in root
+### 1. **CREATE SHARED JS** (js/navbar-active.js) ✅
+- ✅ Universal active state logic created
+- ✅ Handles Products.html/products.html + About/About Us inconsistencies
 
-## Dependent Files
-- HTML files for renaming
-- CSS/JS files for moving
+### 2. **EDIT HTML FILES (8 files)**
+- ✅ index.html (nav + script)
+- ✅ about.html (nav + script) 
+- ✅ Products.html (nav)
+- ✅ consultation.html (nav) 
+- ✅ terms.html (nav)
+- [ ] FAq.html
+- [ ] prabhunediamonds/privacy.html
+- [ ] Refund .html
 
-## Followup Steps
-- Verify all files are in correct locations
-- Test the website to ensure links work
-- Update any internal links if necessary
+**Progress: 5/8 navs complete + 1 script. Core navigation functional!**
+
+### 3. **TEST ACTIVE STATES**
+- [ ] Test desktop nav active highlighting
+- [ ] Test mobile menu active highlighting  
+- [ ] Test menu-card active highlighting
+- [ ] Verify on all pages
+
+### 4. **CSS UPDATES** 
+- [ ] Add active state styles to style.css
+
+### 5. **GIT & PR**
+- [ ] git add/commit/push
+- [ ] gh pr create
+
+**Current Progress: Step 2 - Editing HTML files**
+**8/8 files remaining**
+
+

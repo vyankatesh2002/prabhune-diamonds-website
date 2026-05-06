@@ -1,14 +1,29 @@
-# IDE
-.idea/
-.vscode/
-
-# Windows
-desktop.ini
+# OS generated files
+.DS_Store
 Thumbs.db
+desktop.ini
+
+# IDE files
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
 
 # Python
+.venv/
 __pycache__/
 *.pyc
+.env
 
-# OS
-.DS_Store
+# Logs
+*.log
+npm-debug.log*
+
+# Deployment
+dist/
+build/
+
+# Temp
+tmp/
+temp/
+

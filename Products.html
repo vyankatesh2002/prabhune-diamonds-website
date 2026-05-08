@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +7,11 @@
     <meta name="description"
         content="Authentic gemstones, Rudraksha, Parad products, bracelets, and astrology guidance tools from Prabhune Diamonds & Stones. 28+ years experience.">
     <link rel="canonical" href="https://prabhunediamond.com/Products.html">
-    <link rel="stylesheet" href="css/Products.css">
-    <link rel="stylesheet" href="css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/Products.css">
 </head>
 
 <body>
@@ -21,7 +19,7 @@
     <header>
         <nav class="nav-bar">
             <div class="nav-left">
-                <a href="index.html"><img src="images/logos/PDS.jpg.jpeg" alt="PDS Logo" class="logo1"></a>
+                <a href="index.html"><img src="images/logos/PDS.jpg.png" alt="PDS Logo" class="logo1"></a>
                 <div class="brand-info">
                     <h1>PRABHUNE DIAMONDS & STONES</h1>
                     <p class="tagline">INTEGRITY, TRUST & PROBITY SINCE 1998</p>
@@ -370,20 +368,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/menu-card.js"></script>
-    <script>
-        // Smooth scroll for nav pills
-        document.querySelectorAll('.nav-pill').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                document.querySelectorAll('.nav-pill').forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
-                const target = document.querySelector(link.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
+    <script src="js/product.js">
+        // ========== js/mobile-menu.js ==========
+        
     </script>
 </body>
-
 </html>

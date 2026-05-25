@@ -1,135 +1,155 @@
-/* Portfolio Interactive - Premium Features */
-/* Word animation, Mobile menu, Reveals, Modals (Calc/Todo), Form, Scroll */
+ (function() {
+    // Sticky header
+    const header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
 
-// Word animation for hero heading
-const heading = document.getElementById('animatedHeading');
-if(heading){ 
-  const words = heading.innerText.split(' '); 
-  heading.innerHTML = words.map(w => `<span class="word" style="display:inline-block; opacity:0; transform:translateY(20px); transition:0.6s ease">${w}</span>`).join(' '); 
-  document.querySelectorAll('.word').forEach((w,i) => setTimeout(() => { w.style.opacity = '1'; w.style.transform = 'translateY(0)'; }, i*120)); 
-}
+    // Reveal animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Mobile menu toggle
-const menuBtn = document.querySelector('.mobile-menu-btn');
-const nav = document.querySelector('.nav-links');
-if(menuBtn && nav) {
-  menuBtn.addEventListener('click', () => { 
-    nav.classList.toggle('active'); 
-    menuBtn.innerHTML = nav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>'; 
-  });
-}
+    // Scroll to top button
+    const topBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      const show = window.scrollY > 400;
+      topBtn.style.opacity = show ? '1' : '0';
+      topBtn.style.visibility = show ? 'visible' : 'hidden';
+    });
 
-// Reveal animations observer
-const revealElements = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => { 
-  entries.forEach(entry => { 
-    if(entry.isIntersecting) entry.target.classList.add('visible'); 
-  }); 
-}, { threshold: 0.12 });
-revealElements.forEach(el => observer.observe(el));
+    // Mobile menu toggle
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.nav-links');
+    menuBtn.addEventListener('click', () => {
+      if (nav.style.display === 'flex') {
+        nav.style.display = '';
+        nav.removeAttribute('style');
+      } else {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.position = 'absolute';
+        nav.style.top = '70px';
+        nav.style.left = '0';
+        nav.style.width = '100%';
+        nav.style.background = 'rgba(255,255,255,0.98)';
+        nav.style.padding = '1.5rem';
+        nav.style.backdropFilter = 'blur(8px)';
+        nav.style.zIndex = '998';
+      }
+    });
 
-// Scroll top button
-window.addEventListener('scroll', () => { 
-  const scrollTop = document.getElementById('scrollTopBtn');
-  if(scrollTop) scrollTop.classList.toggle('visible', window.scrollY > 400); 
-});
-document.addEventListener('click', (e) => {
-  if(e.target.id === 'scrollTopBtn' || e.target.closest('#scrollTopBtn')) {
-    e.preventDefault();
-    window.scrollTo({top:0, behavior:'smooth'});
-  }
-});
+    // Close mobile menu on link click (smooth scroll included)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 900) nav.style.display = '';
+      });
+    });
 
-// Contact form - WA.me redirect
-const contactForm = document.getElementById('contactForm');
-if(contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('fullName').value.trim();
-    const email = document.getElementById('emailAddr').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const subject = document.getElementById('subject').value.trim();
-    const message = document.getElementById('message').value.trim();
-    if(!name || !email || !subject || !message) return alert('Please fill required fields.');
-    const waText = `New inquiry from ${name}%0AEmail: ${email}%0APhone: ${phone || 'Not provided'}%0ASubject: ${subject}%0AMessage: ${message}`;
-    window.open(`https://wa.me/919960340222?text=${waText}`, '_blank');
-    alert('Redirecting to WhatsApp. I will reply shortly.');
-    contactForm.reset();
-  });
-}
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === "#" || href === "") return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+        }
+      });
+    });
 
-// Calculator Modal
-const calcModal = document.getElementById('calcModal');
-const calcDemoBtn = document.getElementById('calcDemoBtn');
-if(calcDemoBtn) {
-  calcDemoBtn.onclick = (e) => { 
-    e.preventDefault(); 
-    if(calcModal) calcModal.style.display='flex'; 
-    buildCalc(); 
-  };
-}
-function buildCalc() {
-  const btns = document.getElementById('calcButtons'); 
-  const screen = document.getElementById('calcScreen');
-  if(!btns || !screen) return;
-  btns.innerHTML = '';
-  ['7','8','9','/','4','5','6','*','1','2','3','-','0','.','=','+','C','CE'].forEach(k => {
-    const btn = document.createElement('button'); 
-    btn.textContent = k; 
-    btn.style.cssText = 'background:#1e1e2a;border:none;border-radius:16px;padding:14px;cursor:pointer;color:white;font-weight:600;';
-    btn.onclick = () => { 
-      if(k === 'C'||k==='CE') screen.value=''; 
-      else if(k==='=') { 
-        try { screen.value=eval(screen.value); } catch { screen.value='Error'; } 
-      } else screen.value+=k; 
-    };
-    btns.appendChild(btn);
-  });
-}
-document.getElementById('closeCalcModal')?.onclick = () => calcModal.style.display='none';
+    // Modals
+    const calcModal = document.getElementById('calcModal');
+    const todoModal = document.getElementById('todoModal');
+    const closeCalc = document.getElementById('closeCalcModal');
+    const closeTodo = document.getElementById('closeTodoModal');
 
-// Todo Modal
-const todoModal = document.getElementById('todoModal');
-const todoDemoBtn = document.getElementById('todoDemoBtn');
-if(todoDemoBtn) {
-  todoDemoBtn.onclick = (e) => { 
-    e.preventDefault(); 
-    if(todoModal) todoModal.style.display='flex'; 
-    initTodo(); 
-  };
-}
-function initTodo() {
-  const input = document.getElementById('demoTodoInput'), 
-  add = document.getElementById('demoAddTodo'), 
-  list = document.getElementById('demoTodoList');
-  if(!input || !add || !list) return;
-  let tasks = [];
-  function render() { 
-    list.innerHTML = ''; 
-    tasks.forEach((t,i) => { 
-      const li = document.createElement('li'); 
-      li.style.cssText = 'display:flex;justify-content:space-between;padding:0.5rem 0;list-style:none;'; 
-      li.innerHTML = `<span>${t}</span><button data-idx="${i}" class="delTodo" style="background:none;border:none;color:#ff6b6b;font-size:1.2rem;cursor:pointer;">🗑️</button>`; 
-      list.appendChild(li); 
-    }); 
-    document.querySelectorAll('.delTodo').forEach(btn => {
-      btn.onclick = () => { tasks.splice(btn.dataset.idx,1); render(); };
-    }); 
-  }
-  add.onclick = () => { 
-    if(input.value.trim()) { 
-      tasks.push(input.value.trim()); 
-      input.value=''; 
-      render(); 
-    } 
-  };
-  render();
-}
-document.getElementById('closeTodoModal')?.onclick = () => todoModal.style.display='none';
+    function openModal(modal) { modal.style.display = 'flex'; }
+    function closeModal(modal) { modal.style.display = 'none'; }
 
-// Close modals on outside click
-window.onclick = (e) => { 
-  if(e.target === calcModal) calcModal.style.display='none'; 
-  if(e.target === todoModal) todoModal.style.display='none'; 
-};
+    document.getElementById('calcDemoBtn').addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal(calcModal);
+      buildCalc();
+    });
+    document.getElementById('todoDemoBtn').addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal(todoModal);
+    });
 
+    closeCalc.addEventListener('click', () => closeModal(calcModal));
+    closeTodo.addEventListener('click', () => closeModal(todoModal));
+    window.addEventListener('click', (e) => {
+      if (e.target === calcModal) closeModal(calcModal);
+      if (e.target === todoModal) closeModal(todoModal);
+    });
+
+    // Calculator logic
+    let calcExp = '';
+    function buildCalc() {
+      const container = document.getElementById('calcButtons');
+      container.innerHTML = '';
+      const keys = ['7','8','9','/','4','5','6','*','1','2','3','-','0','.','=','+','C'];
+      keys.forEach(k => {
+        const btn = document.createElement('button');
+        btn.textContent = k;
+        btn.addEventListener('click', () => {
+          const screen = document.getElementById('calcScreen');
+          if (k === 'C') {
+            calcExp = '';
+            screen.value = '0';
+          } else if (k === '=') {
+            try {
+              const res = Function('"use strict";return (' + calcExp + ')')();
+              screen.value = res;
+              calcExp = res.toString();
+            } catch {
+              screen.value = 'Error';
+              calcExp = '';
+            }
+          } else {
+            if (calcExp === '' && screen.value === '0' && !isNaN(k)) calcExp = k;
+            else calcExp += k;
+            screen.value = calcExp;
+          }
+        });
+        container.appendChild(btn);
+      });
+    }
+
+    // Simple Todo demo
+    const todoInput = document.getElementById('demoTodoInput');
+    const addBtn = document.getElementById('demoAddTodo');
+    const todoList = document.getElementById('demoTodoList');
+    addBtn.addEventListener('click', () => {
+      if (todoInput.value.trim()) {
+        const li = document.createElement('li');
+        li.textContent = todoInput.value;
+        li.style.padding = '0.5rem';
+        li.style.borderBottom = '1px solid #3a3a50';
+        li.style.color = '#ddd';
+        todoList.appendChild(li);
+        todoInput.value = '';
+      }
+    });
+    todoInput.addEventListener('keypress', (e) => { if(e.key==='Enter') addBtn.click(); });
+
+    // Contact form (mailto)
+    const form = document.getElementById('contactForm');
+    const fb = document.getElementById('formFeedback');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value.trim();
+      const email = document.getElementById('contactEmail').value.trim();
+      const subject = document.getElementById('contactSubject').value.trim() || 'Project Inquiry';
+      const msg = document.getElementById('contactMessage').value.trim();
+      if (!name || !email) {
+        fb.innerHTML = '<span style="color:#f87171;">Name and email required.</span>';
+        return;
+      }
+      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${msg}`;
+      window.location.href = `mailto:vyankateshvjaware9960@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+      fb.innerHTML = '<span style="color:#4ade80;">✓ Opening email client...</span>';
+      form.reset();
+    });
+  })();

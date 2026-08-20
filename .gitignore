@@ -1,29 +1,10 @@
-# OS generated files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# IDE files
-.idea/
-.vscode/settings.json
-*.swp
-*.swo
-
-# Python
-.venv/
+﻿.env
 __pycache__/
 *.pyc
-.env
-
-# Logs
+.venv/
+venv/
+.vscode/
+.idea/
 *.log
-npm-debug.log*
-
-# Deployment
-dist/
-build/
-
-# Temp
-tmp/
-temp/
-
+Thumbs.db
+.DS_Store

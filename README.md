@@ -1,122 +1,48 @@
-# 👋 Hi, I'm Vyankatesh Jaware
+﻿# Prabhune Diamonds & Stones
 
-🚀 Web Developer | Building Practical Digital Products & Real Business Websites
-⚡ Focused on Performance, SEO, UI/UX & Real-World Execution
-💡 Learning by building real systems, not just tutorials
+Official business website project for Prabhune Diamonds & Stones.
 
----
+## Project Overview
 
-# 💎 Featured Live Project
+This repository contains the frontend implementation of the Prabhune Diamonds & Stones website, built to provide a professional digital presence for the business.
 
-## Prabhune Diamonds Website
+## Key Goals
 
-🔗 https://prabhunediamond.com
+- Present the brand clearly and professionally
+- Showcase products and services
+- Improve online discoverability
+- Provide responsive access across desktop and mobile devices
+- Maintain a clean, business-focused user experience
 
-### Project Highlights
+## Technology
 
-* Complete business website development
-* Fully responsive modern UI
-* SEO-ready architecture
-* WhatsApp lead integration
-* Performance-focused frontend
-* Real business deployment
+- HTML
+- CSS
+- JavaScript
+- Responsive web design
+- GitHub Pages / static deployment workflow
 
-✅ Live project actively used by a real business
+## Project Type
 
----
+Real client website project.
 
-# ⚡ About Me
+## Development Focus
 
-I build websites and digital systems focused on real-world usability, performance, and business value.
+- Performance
+- Responsive design
+- SEO-friendly structure
+- Clear navigation
+- Professional visual presentation
+- Maintainable frontend code
 
-Coming from a small village in Maharashtra, I started learning with limited resources and focused on improving through practical execution and consistency.
+## Status
 
-Instead of only following tutorials, I prefer building projects that solve actual problems and create real user experiences.
+Actively maintained client project.
 
-Currently expanding into:
+## Notes
 
-* Full-stack development
-* Scalable digital platforms
-* AI-driven systems
-* Mobility & experience-based products
-
----
-
-# 🌍 What I Focus On
-
-* Business Websites
-* Modern Frontend UI
-* Responsive Design
-* SEO Optimization
-* User Experience
-* Real-World Product Building
-* Performance Optimization
-* Scalable Digital Systems
+This repository is maintained as part of ongoing website development and improvement work for the client.
 
 ---
 
-# 🛠️ Tech Stack
-
-### Frontend
-
-* HTML
-* CSS
-* JavaScript
-
-### Tools & Workflow
-
-* Git
-* GitHub
-* SEO Optimization
-* Responsive Design
-
-### Currently Learning
-
-* React
-* Node.js
-* Full-Stack Development
-* System Architecture
-
----
-
-# 🚀 Projects
-
-### 💻 Web Projects
-
-* Business Websites
-* Portfolio Website
-* Calculator App
-* To-Do List App
-
-### 🏗️ Building Next
-
-* **Vynora** — Peaceful mobility & travel experience platform
-* **Vandvik** — AI-focused digital system project
-
----
-
-# 📈 Current Goals
-
-* Build more live client projects
-* Improve frontend engineering skills
-* Move into full-stack development
-* Learn scalable product architecture
-* Build technology focused on real-world impact
-
----
-
-# 🧠 Philosophy
-
-> “Build real things. Improve daily. Learn through execution.”
-
----
-
-# 📬 Contact
-
-📧 Email: [vyankateshvjaware2002@gmail.com](mailto:vyankateshvjaware2002@gmail.com)
-
----
-
-# 🌱 Journey
-
-Focused on long-term growth, practical learning, and creating systems that combine technology, usability, and meaningful real-world experiences.
+Built and maintained with a focus on professional presentation, usability, and real-world business requirements.
